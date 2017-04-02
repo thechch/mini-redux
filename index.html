@@ -5,8 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="./store.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/5.0.3/react-redux.js"></script>
 </head>
 <body>
+    <div id="app"></div>
+    <script type="text/babel" src="./store.js"></script>
+    <script type="text/babel" src="./connect.js"></script>
+    <script type="text/babel" src="./app.js"></script>
+    <script type="text/babel">
+       ReactDOM.render(
+            React.createElement('div'),
+            document.getElementById('app')
+        )
+    </script>
 </body>
 </html>
