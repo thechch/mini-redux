@@ -17,3 +17,5 @@ const createStore = (reducer, initialState) => {
         }
     };
 }
+
+export default createStore;

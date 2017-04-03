@@ -1,5 +1,5 @@
-function connect(mapStateToProps, mapDispatchToAction) {
-    return function(WrappedComponent) {
+const connect = (mapStateToProps, mapDispatchToAction) => {
+    ( WrappedComponent ) => {
         return class extends React.Component {
             render() {
                 return (
@@ -13,3 +13,5 @@ function connect(mapStateToProps, mapDispatchToAction) {
         }
     }
 }
+
+export default connect;
